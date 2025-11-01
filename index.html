@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Homemade Cookies — MKBakes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Delicious homemade cookies from MKBakes. Find flavors, ingredients, and ordering info." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">MKBakes</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#flavors">Flavors</a>
+        <a href="#about">About</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Warm. Fresh. Homemade.</h2>
+          <p>Small-batch cookies baked with love — classic and creative flavors for every craving.</p>
+          <a class="btn" href="#order">Order Now</a>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- Replace with a real image path or decorative SVG -->
+          <div class="cookie-illustration">🍪</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="flavors" class="container flavors">
+      <h3>Popular Flavors</h3>
+      <ul class="flavor-list">
+        <li>
+          <h4>Classic Chocolate Chip</h4>
+          <p>Brown-butter, gooey chocolate chips, a hint of sea salt.</p>
+        </li>
+        <li>
+          <h4>Oat & Raisin</h4>
+          <p>Chewy oats, plump raisins, cinnamon spice.</p>
+        </li>
+        <li>
+          <h4>Double Chocolate</h4>
+          <p>Rich chocolate cookie with dark and milk chocolate chunks.</p>
+        </li>
+        <li>
+          <h4>Peanut Butter Swirl</h4>
+          <p>Buttery peanut base with a ribbon of peanut butter.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About Our Cookies</h3>
+      <p>
+        All cookies are baked to order using high-quality ingredients. We offer dairy-free and gluten-friendly options by request.
+        Each batch is handmade and small to ensure consistent quality and freshness.
+      </p>
+    </section>
+
+    <section id="order" class="container order">
+      <h3>Place an Order</h3>
+      <p>Ordering is simple — choose your flavor, quantity, and preferred pickup/delivery date.</p>
+
+      <form class="order-form" action="#" method="post" onsubmit="alert('This is a demo form. Replace the action with your ordering endpoint.'); return false;">
+        <label>
+          Your name
+          <input type="text" name="name" required placeholder="Jane Doe" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@example.com" />
+        </label>
+
+        <label>
+          Flavor
+          <select name="flavor" required>
+            <option>Classic Chocolate Chip</option>
+            <option>Oat & Raisin</option>
+            <option>Double Chocolate</option>
+            <option>Peanut Butter Swirl</option>
+          </select>
+        </label>
+
+        <label>
+          Quantity (dozen)
+          <input type="number" name="quantity" min="1" value="1" required />
+        </label>
+
+        <label>
+          Pickup / Delivery Date
+          <input type="date" name="date" />
+        </label>
+
+        <button class="btn" type="submit">Submit Order</button>
+      </form>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:hello@mkbakes.example">hello@mkbakes.example</a></p>
+      <p>Phone: <a href="tel:+1234567890">+1 (234) 567‑890</a></p>
+      <p class="disclaimer">Local pickup available; delivery within the city for a small fee.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MKBakes — Homemade Cookies</p>
+    </div>
+  </footer>
+
+  <script>
+    // Small script to set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
